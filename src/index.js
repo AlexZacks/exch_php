@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {App, Tl} from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const bd = ReactDOM.createRoot(document.getElementById('bd'));
+bd.render(<React.StrictMode><Tl /></React.StrictMode>);
+
+const root = ReactDOM.createRoot(document.getElementById('tbl'));
 root.render(
   <React.StrictMode>
     <App />
